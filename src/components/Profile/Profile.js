@@ -32,7 +32,7 @@ export default function Profile({avatar, name, tag, location, stats}) {
   )
 }
 
-Profile.PropTypes = {
+Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
