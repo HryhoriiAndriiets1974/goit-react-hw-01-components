@@ -1,7 +1,7 @@
 .transactionHistory {
   padding: 10px;
   width: 512px;
-  background: #ffffff;
+  background: var(--for-black-color);
   box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2), 2px 1px 1px rgba(0, 0, 0, 0.14),
     2px 4px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -10,8 +10,8 @@
 .thead {
   font-size: 24px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgb(5, 175, 175);
+  color: var(--for-black-color);
+  background-color: var(--accent-color);
 }
 
 .item {
@@ -19,5 +19,5 @@
   font-size: 24px;
 }
 .item:nth-child(2n) {
-  background-color: rgb(211, 216, 216);
+  background-color: var(--primary-bg-color);
 }
