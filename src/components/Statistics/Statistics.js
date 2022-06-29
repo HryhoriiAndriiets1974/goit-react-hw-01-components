@@ -8,12 +8,12 @@ export default function Statistics({title, stats}) {
     <h2 className={css.title}>{title}</h2>
 
     <ul className={css.statList}>
-      {stats.map(stat => (
+      {stats.map(({id, label, percentage}) => (
         <li className={css.statItem}
-            key={stat.id}
+            key={id}
             style={{backgroundColor: getRandomColor()}}>
-          <span className={css.label}>{stat.label}</span>
-          <span className={css.percentage}>{stat.percentage}%</span>
+          <span className={css.label}>{label}</span>
+          <span className={css.percentage}>{percentage}%</span>
         </li>
       ))}
     </ul>
